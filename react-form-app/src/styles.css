@@ -1,0 +1,111 @@
+/* styles.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9fafb;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  form {
+    background: #fff;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  select {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+    border: 1.8px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="tel"]:focus,
+  select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  button:disabled {
+    background-color: #7f8c8d;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #2980b9;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: 3px;
+    font-weight: 500;
+  }
+  
+  .flex-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  
+  .flex-row select {
+    width: 80px;
+    margin-top: 0;
+  }
+  
+  .flex-row input[type="tel"] {
+    flex-grow: 1;
+    margin-top: 0;
+  }
+  
