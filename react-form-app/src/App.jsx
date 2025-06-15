@@ -1,17 +1,6 @@
-// src/App.jsx
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import FormPage from "./FormPage";
-import DetailsPage from "./DetailsPage";
+import React from 'react';
+import TodoList from './components/TodoList';
 
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<FormPage />} />
-        <Route path="/details" element={<DetailsPage />} />
-      </Routes>
-    </Router>
-  );
-}
+const App = () => <TodoList />;
 
 export default App;
